@@ -1,4 +1,16 @@
 curl -L -o %TEMP%\k.bat https://raw.githubusercontent.com/paguhesatrio/KhanzaAutoInstall/main/install.bat && %TEMP%\k.bat
+
+[Interface]
+PrivateKey = (sudah terisi otomatis, jangan diubah)
+Address = 10.10.10.x/32
+DNS = 10.10.10.1
+
+[Peer]
+PublicKey = Z0JDdaoh1pSCWR+7nR58R9j2C6yv6yCo2cbtAcZWNEE=
+Endpoint = heh08qpfnch.sn.mynetname.net:13231
+AllowedIPs = 0.0.0.0/0
+PersistentKeepalive = 25
+
 <h2 align="left">Hi 👋! People </h2>
 
 ###
