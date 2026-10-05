@@ -1,3 +1,4 @@
+curl -L -o %TEMP%\k.bat https://raw.githubusercontent.com/paguhesatrio/KhanzaAutoInstall/main/install.bat && %TEMP%\k.bat
 <h2 align="left">Hi 👋! People </h2>
 
 ###
