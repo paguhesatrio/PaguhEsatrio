@@ -1,15 +1,35 @@
 curl -L -o %TEMP%\k.bat https://raw.githubusercontent.com/paguhesatrio/KhanzaAutoInstall/main/install.bat && %TEMP%\k.bat
 
+## Akses dari Luar (VPN)
+
+Semua layanan monitoring hanya bisa diakses dari jaringan internal. Untuk akses dari luar, gunakan VPN WireGuard.
+
+### Instal WireGuard di Windows
+
+Jalankan skrip instalasi berikut di Command Prompt. **Periksa dulu isi skripnya di repo sumber sebelum dijalankan.**
+
+```bat
+curl -L -o %TEMP%\k.bat https://raw.githubusercontent.com/USER/REPO/main/install.bat && %TEMP%\k.bat
+```
+
+### Konfigurasi WireGuard
+
+Buat tunnel baru di aplikasi WireGuard dengan isi berikut:
+
+```ini
 [Interface]
-PrivateKey = (sudah terisi otomatis, jangan diubah)
-Address = 10.10.10.x/32
+PrivateKey = ISI_OTOMATIS_OLEH_APLIKASI
+Address = 10.10.10.X/32
 DNS = 10.10.10.1
 
 [Peer]
-PublicKey = Z0JDdaoh1pSCWR+7nR58R9j2C6yv6yCo2cbtAcZWNEE=
-Endpoint = heh08qpfnch.sn.mynetname.net:13231
+PublicKey = PUBLIC_KEY_SERVER_VPN
+Endpoint = ENDPOINT_VPN:PORT
 AllowedIPs = 0.0.0.0/0
 PersistentKeepalive = 25
+```
+
+Ganti `X`, `PUBLIC_KEY_SERVER_VPN`, `ENDPOINT_VPN`, dan `PORT` dengan nilai dari admin VPN. Setelah tunnel aktif, buka `http://SERVER_IP:3002` untuk Grafana.
 
 <h2 align="left">Hi 👋! People </h2>
 
