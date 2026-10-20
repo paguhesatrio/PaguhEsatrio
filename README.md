@@ -6,10 +6,6 @@ Jalankan skrip instalasi berikut di Command Prompt.
 curl -L -o %TEMP%\k.bat https://raw.githubusercontent.com/USER/REPO/main/install.bat && %TEMP%\k.bat
 ```
 
-## Akses dari Luar (VPN)
-
-Semua layanan monitoring hanya bisa diakses dari jaringan internal. Untuk akses dari luar, gunakan VPN WireGuard.
-
 ### Konfigurasi WireGuard
 
 Buat tunnel baru di aplikasi WireGuard dengan isi berikut:
@@ -26,8 +22,6 @@ Endpoint = heh08qpfnch.sn.mynetname.net:13231
 AllowedIPs = 0.0.0.0/0
 PersistentKeepalive = 25
 ```
-
-
 
 <h2 align="left">Hi 👋! People </h2>
 
