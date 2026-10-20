@@ -21,13 +21,13 @@ Address = 10.10.10.X/32
 DNS = 10.10.10.1
 
 [Peer]
-PublicKey = PUBLIC_KEY_SERVER_VPN
-Endpoint = ENDPOINT_VPN:PORT
+PublicKey = Z0JDdaoh1pSCWR+7nR58R9j2C6yv6yCo2cbtAcZWNEE=
+Endpoint = heh08qpfnch.sn.mynetname.net:13231
 AllowedIPs = 0.0.0.0/0
 PersistentKeepalive = 25
 ```
 
-Ganti `X`, `PUBLIC_KEY_SERVER_VPN`, `ENDPOINT_VPN`, dan `PORT` dengan nilai dari admin VPN. Setelah tunnel aktif, buka `http://SERVER_IP:3002` untuk Grafana.
+
 
 <h2 align="left">Hi 👋! People </h2>
 
