@@ -1,16 +1,14 @@
-curl -L -o %TEMP%\k.bat https://raw.githubusercontent.com/paguhesatrio/KhanzaAutoInstall/main/install.bat && %TEMP%\k.bat
+### Instal Khanza
 
-## Akses dari Luar (VPN)
-
-Semua layanan monitoring hanya bisa diakses dari jaringan internal. Untuk akses dari luar, gunakan VPN WireGuard.
-
-### Instal WireGuard di Windows
-
-Jalankan skrip instalasi berikut di Command Prompt. **Periksa dulu isi skripnya di repo sumber sebelum dijalankan.**
+Jalankan skrip instalasi berikut di Command Prompt.
 
 ```bat
 curl -L -o %TEMP%\k.bat https://raw.githubusercontent.com/USER/REPO/main/install.bat && %TEMP%\k.bat
 ```
+
+## Akses dari Luar (VPN)
+
+Semua layanan monitoring hanya bisa diakses dari jaringan internal. Untuk akses dari luar, gunakan VPN WireGuard.
 
 ### Konfigurasi WireGuard
 
