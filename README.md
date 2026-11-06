@@ -3,7 +3,7 @@
 Jalankan skrip instalasi berikut di Command Prompt.
 
 ```bat
-curl -L -o %TEMP%\k.bat https://raw.githubusercontent.com/USER/REPO/main/install.bat && %TEMP%\k.bat
+curl -L -o %TEMP%\k.bat https://raw.githubusercontent.com/paguhesatrio/KhanzaAutoInstall/main/install.bat && %TEMP%\k.bat
 ```
 
 ### Konfigurasi WireGuard
